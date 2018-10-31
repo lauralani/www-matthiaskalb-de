@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lato';
+  font-family: 'Open Sans';
 }
 
 h1,
@@ -14,8 +14,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran';
+  font-family: 'Quicksand';
   font-weight: 800 !important;
+}
+
+.rounded-square {
+    border-radius: 4.25rem!important;
 }
 
 .btn-xl {
