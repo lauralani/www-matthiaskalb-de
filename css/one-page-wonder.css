@@ -71,6 +71,10 @@ header.masthead {
   background-image: url(../img/bg.jpg);
 }
 
+.display-4 {
+  font-size: 2.8rem;
+}
+
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
@@ -79,7 +83,6 @@ header.masthead .masthead-content {
 .masthead-subheading {
     padding-bottom: 85px;
 }
-
 header.masthead .masthead-content .masthead-heading {
   font-size: 4rem;
 }
