@@ -68,7 +68,7 @@ header.masthead {
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
-  background-image: url(../img/bg.jpg);
+  background-image: url(/img/bg.jpg);
 }
 
 .display-4 {
