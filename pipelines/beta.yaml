@@ -9,12 +9,19 @@ trigger:
 variables:
   vmImageName: 'windows-latest'
 
-
-steps:
-- task: AzureFileCopy@4
-  inputs:
-    SourcePath: '$(Build.SourcesDirectory)/frontend/'
-    azureSubscription: 'CC-PAYG-01(4073f0a2-5031-4a64-9e92-81d19c5676f3)'
-    Destination: 'AzureBlob'
-    storage: 'wemkbetasa'
-    ContainerName: '$web'
+stages:
+- stage: Deploy
+  displayName: Deployment stage
+  jobs:
+  - job: Deploy 
+    displayName: Deploy
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: AzureFileCopy@4
+      inputs:
+        SourcePath: '$(Build.SourcesDirectory)/frontend/'
+        azureSubscription: 'CC-PAYG-01(4073f0a2-5031-4a64-9e92-81d19c5676f3)'
+        Destination: 'AzureBlob'
+        storage: 'wemkbetasa'
+        ContainerName: '$web'
