@@ -6,6 +6,9 @@
 trigger:
 - beta
 
+variables:
+  vmImageName: 'windows-latest'
+
 
 steps:
 - task: AzureFileCopy@4
